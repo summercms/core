@@ -6,11 +6,11 @@
                 class="form-control"
                 type="password"
                 :name="name"
+                :id="id"
                 :value="value"
                 :required="required"
                 :readonly="readonly"
                 :data-errormessage="errormessage"
-                :pattern="pattern"
                 :placeholder="placeholder"
                 autocomplete="new-password"
                 @input="measureStrength"
@@ -47,7 +47,6 @@ export default {
         required: Boolean,
         readonly: Boolean,
         errormessage: String | Boolean, //string if errormessage is set, and false otherwise
-        pattern: String | Boolean,
         placeholder: String | Boolean,
     },
 
@@ -64,8 +63,8 @@ export default {
     methods: {
         togglePassword(event) {
             const iconElement = event.target;
-            const inputElement = this.$el.querySelector('#' + this.id);
-            const inputType = inputElement.attributes.getNamedItem('type').value;
+            const inputElement = document.querySelector('#' + this.id);
+            const inputType = inputElement.getAttribute('type');
 
             if (inputType === 'password') {
                 inputElement.setAttribute('type', 'text');

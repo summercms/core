@@ -27,7 +27,7 @@
         "url": "git://github.com/bolt/core.git"
     },
     "dependencies": {
-        "@vue/cli-service": "^4.5.13",
+        "@vue/cli-service": "^5.0.9",
         "axios": "^0.21.1",
         "baguettebox.js": "^1.11.1",
         "bootbox": "^5.5.2",

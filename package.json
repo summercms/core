@@ -39,7 +39,7 @@
         "flagpack": "^1.0.5",
         "hotkeys-js": "^3.8.7",
         "jquery": "^3.6.0",
-        "locutus": "^2.0.14",
+        "locutus": "^2.0.39",
         "luxon": "^1.28.0",
         "no-scroll": "^2.1.1",
         "node-vibrant": "^3.1.6",
